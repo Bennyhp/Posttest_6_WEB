@@ -1,0 +1,121 @@
+body {
+    color: #081414;
+    background-color: white;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.nav_items {
+    background-color: #132c2c;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.nav_items li {
+    float: left;
+}
+
+.nav_items li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.nav_items li a:hover {
+    background-color: #081414;
+}
+
+.main_contents {
+    height: 1000px;
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+
+/* .text {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form_div {
+    margin: auto;
+    width: 10%;
+    margin-top: 15%;
+}
+
+.form_class {
+    width: 300px;
+} */
+
+
+
+
+
+/*===============================*/
+
+
+.btn_tambah {
+    padding: 10px 0;
+}
+
+
+table {
+    width: 100%;
+}
+
+
+.table_class {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.table_class thead tr {
+    background-color: #132c2c;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table_class th,
+.table_class td {
+    padding: 12px 15px;
+}
+
+.table_class tbody tr {
+    border-bottom: 1px solid rgba(185, 185, 185, 0.867);
+}
+
+.table_class tbody tr:nth-of-type(even) {
+    background-color: #dcdcdc;
+}
+
+
+.form_rent {
+    background-color: #132c2c;
+    color: white;
+}
+
+.form_rent form {
+    padding: 0 35%;
+}
+
+
+.form_rent h3 {
+    padding: 0 35%;
+}
