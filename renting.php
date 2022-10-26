@@ -17,7 +17,7 @@ if (isset($_GET['id'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/style.css">
-    <title>Posttest 5</title>
+    <title>Rent Film</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@ if (isset($_GET['id'])) {
         </div>
     </nav>
     <div class="form_rent">
-        <h3>Rent Form</h3>
+        <h3>Form Rent</h3>
         <form action="add.php" method="post">
             <label for="">Titles</label><br>
             <select name="film_title" id="">
@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
             <label for="">Email</label><br>
             <input type="text" name="email" class="form_text"><br><br>
 
-            <input type="submit" name="submit" value="Confirm" class="btn-submit">
+            <input type="submit" name="submit" value="Confirm" class="btn_submit">
         </form>
     </div>
 </body>

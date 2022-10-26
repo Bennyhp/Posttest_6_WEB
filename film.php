@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posttest 5</title>
+    <title>Rent Film</title>
     <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 
@@ -19,6 +19,7 @@
             </ul>
         </div>
     </nav>
+    <div class="btn_add"><a href="new_film.php">Add</a></div>
     <table class="table_class">
         <thead>
             <tr>
@@ -28,6 +29,8 @@
                 <th>Duration</th>
                 <th>Ratings</th>
                 <th>Rent</th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -43,6 +46,10 @@
                     <td><?= $row['duration'] ?></td>
                     <td><?= $row['ratings'] ?></td>
                     <td><?= $row['rent'] ?></td>
+                    <td class="Edit_film">
+                        <a href="#">Edit</a>
+                    <td class="Hapus_film">
+                        <a href="delete_film.php?id=<?=$row['id_films']?>">Delete</a>
                 </tr>
             <?php
             }

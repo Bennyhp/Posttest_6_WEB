@@ -10,6 +10,6 @@ if (isset($_POST['submit'])) {
     if ($query_renters) {
         header("Location:index.php");
     } else {
-        echo "Tambah data error";
+        echo "Add Data Failed";
     }
 }

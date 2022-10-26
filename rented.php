@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posttest 5</title>
+    <title>Rent Film</title>
     <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 
@@ -34,6 +34,8 @@
             <tbody>
                 <?php
                 require "config.php";
+                $query2 = mysqli_query($db, "SELECT * FROM rented");
+                $data = mysqli_fetch_assoc($query2);
                 $query = mysqli_query($db,  "SELECT renters.name, renters.email, films.title
                 FROM rented 
                 INNER JOIN renters ON renters.id_renters=rented.id_renters 
@@ -48,7 +50,7 @@
                         <td class="Edit">
                             <a href="#">Edit</a>
                         <td class="Delete">
-                            <a href="#">Delete</a>
+                            <a href="delete.php?id=<?=$data['id_rented']?>">Delete</a>
                     </tr>
                 <?php
                 }
