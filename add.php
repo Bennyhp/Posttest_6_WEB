@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $idRenters = mysqli_insert_id($db);
     $query_rented = mysqli_query($db, "INSERT INTO rented (id_films, id_renters) VALUES ('$idFilms', $idRenters)");
     if ($query_renters) {
-        header("Location:index.php");
+        header("Location:rented.php");
     } else {
         echo "Add Data Failed";
     }

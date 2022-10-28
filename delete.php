@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     $query_rented = mysqli_query($db, "DELETE FROM rented WHERE id_rented=$idRented");
     $query_renters = mysqli_query($db, "DELETE FROM renters WHERE id_renters=$idRenters");
     if ($query_rented) {
-        header("Location:index.php");
+        header("Location:rented.php");
     } else {
         echo "Delete Failed";
     }

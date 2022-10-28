@@ -47,8 +47,6 @@
                         <td><?= $row['name'] ?></td>
                         <td><?= $row['email'] ?></td>
                         <td><?= $row['title'] ?></td>
-                        <td class="Edit">
-                            <a href="#">Edit</a>
                         <td class="Delete">
                             <a href="delete.php?id=<?=$data['id_rented']?>">Delete</a>
                     </tr>

@@ -23,6 +23,7 @@
     <table class="table_class">
         <thead>
             <tr>
+                <th>Poster  </th>
                 <th>Title</th>
                 <th>Year</th>
                 <th>Genre</th>
@@ -36,10 +37,11 @@
         <tbody>
             <?php
             require "config.php";
-            $query = mysqli_query($db, "SELECT * FROM films");
+            $query = mysqli_query($db, "SELECT * FROM films INNER JOIN appendix ON films.id_films=appendix.id_films");
             while ($row = mysqli_fetch_assoc($query)) {
             ?>
                 <tr>
+                    <td><img width="150px" src="images/<?=$row['file']?>" alt="<?=$row['file']?>"></td>
                     <td><?= $row['title'] ?></td>
                     <td><?= $row['year'] ?></td>
                     <td><?= $row['genre'] ?></td>
@@ -47,7 +49,7 @@
                     <td><?= $row['ratings'] ?></td>
                     <td><?= $row['rent'] ?></td>
                     <td class="Edit_film">
-                        <a href="#">Edit</a>
+                        <a href="edit_film.php?id=<?=$row['id_films']?>">Edit</a>
                     <td class="Hapus_film">
                         <a href="delete_film.php?id=<?=$row['id_films']?>">Delete</a>
                 </tr>

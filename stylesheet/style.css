@@ -44,30 +44,9 @@ nav {
     padding-top: 50px;
 }
 
-/* .text {
-    padding-left: 50px;
-    padding-right: 50px;
-}
 
-.form_div {
-    margin: auto;
-    width: 10%;
-    margin-top: 15%;
-}
-
-.form_class {
-    width: 300px;
-} */
-
-
-
-
-
-/*===============================*/
-
-
-.btn_tambah {
-    padding: 10px 0;
+.btn_add {
+    padding: 20px 0;
 }
 
 
@@ -81,7 +60,7 @@ table {
     margin: 25px 0;
     font-size: 0.9em;
     min-width: 400px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -105,17 +84,31 @@ table {
     background-color: #dcdcdc;
 }
 
+.form_class {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
 
-.form_rent {
+.form_text {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px 20px;
+}
+
+.btn_add {
+    border-radius: 10px;
+    margin-top: 30px;
     background-color: #132c2c;
+    width: 10%;
+}
+
+.btn_add a {
+    padding: 40%;
     color: white;
+    text-decoration: none;
 }
 
-.form_rent form {
-    padding: 0 35%;
-}
-
-
-.form_rent h3 {
-    padding: 0 35%;
+.btn_add:hover {
+    background-color: #204040;
 }

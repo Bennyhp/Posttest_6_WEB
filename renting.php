@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
             </ul>
         </div>
     </nav>
-    <div class="form_rent">
+    <div class="form_class">
         <h3>Form Rent</h3>
         <form action="add.php" method="post">
             <label for="">Titles</label><br>
