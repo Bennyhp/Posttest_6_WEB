@@ -16,10 +16,13 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="film.php">Film List</a></li>
                 <li><a href="rented.php">Rented List</a></li>
+                <li class="btn_darkmode" style="float: right;"><a href="#">Dark Mode</a></li>
             </ul>
         </div>
     </nav>
-    <div class="btn_add"><a href="new_film.php">Add</a></div>
+    <div class="btn_class">
+        <div class="btn_add"><a href="new_film.php">Add</a></div>
+    </div>
     <table class="table_class">
         <thead>
             <tr>

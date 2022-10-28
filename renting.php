@@ -31,7 +31,7 @@ if (isset($_GET['id'])) {
         </div>
     </nav>
     <div class="form_class">
-        <h3>Form Rent</h3>
+        <h3>Form Add Rented</h3>
         <form action="add.php" method="post">
             <label for="">Titles</label><br>
             <select name="film_title" id="">

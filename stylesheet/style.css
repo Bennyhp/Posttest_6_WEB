@@ -45,9 +45,14 @@ nav {
 }
 
 
+.btn_class {
+    padding: 20px 0;
+}
+
 .btn_add {
     padding: 20px 0;
 }
+
 
 
 table {

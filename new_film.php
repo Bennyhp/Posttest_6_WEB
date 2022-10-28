@@ -20,7 +20,7 @@
         </div>
     </nav>
     <div class="form_class">
-        <h3>Form Film</h3>
+        <h3>Form Add Film</h3>
         <form action="add_film.php" method="post" enctype="multipart/form-data">
             <label for="">Titles</label><br>
             <input type="text" name="title_film" class="form_text"><br><br>

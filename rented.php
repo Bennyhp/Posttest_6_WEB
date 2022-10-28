@@ -20,7 +20,9 @@
         </div>
     </nav>
     <div class="main-contents">
-        <div class="btn_add"><a href="renting.php">Add</a></div>
+        <div class="btn_class">
+            <div class="btn_add"><a href="renting.php">Add</a></div>
+        </div>
         <table class="table_class">
             <thead>
                 <tr>
@@ -48,7 +50,7 @@
                         <td><?= $row['email'] ?></td>
                         <td><?= $row['title'] ?></td>
                         <td class="Delete">
-                            <a href="delete.php?id=<?=$data['id_rented']?>">Delete</a>
+                            <a href="delete.php?id=<?= $data['id_rented'] ?>">Delete</a>
                     </tr>
                 <?php
                 }
